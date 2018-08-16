@@ -1,0 +1,20 @@
+# Systemd unit file for spawn
+[Unit]
+Description=spawn-fcgi Application Container
+After=syslog.target network.target
+
+[Service]
+Type=forking
+EnvironmentFile=/etc/sysconfig/spawn-fcgi
+ExecStart=/usr/bin/spawn-fcgi -f $OPTIONS -s $SOCKET
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+User=root
+Group=root
+
