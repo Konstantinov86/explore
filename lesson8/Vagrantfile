@@ -90,6 +90,7 @@ sudo cp /tmp/nginx.repo /etc/yum.repos.d/
 #download source
 cd /tmp
 sudo yumdownloader --source nginx
+sudo rpm -Uvh nginx*.src.rpm
 sudo yum-builddep nginx
 sudo rpm -Uvh nginx*.ngx.src.rpm
 cd /usr/src/
