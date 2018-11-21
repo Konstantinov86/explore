@@ -1,0 +1,19 @@
+---
+# Install NGINX.
+# Default is true.
+  template_file: nginx.conf.j2
+  conf_file_name: nginx.conf
+  conf_file_location: /etc/nginx/
+  user: nginx
+  worker_processes: auto
+  error_level: warn
+  worker_connections: 1024
+  http_enable: true
+  http_settings:
+    keepalive_timeout: 65
+    cache: false
+    rate_limit: false
+    keyval: false
+  stream_enable: false
+  nginx_port: 8080
+

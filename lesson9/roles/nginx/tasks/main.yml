@@ -1,0 +1,4 @@
+#include tasks
+- include: install.yml
+- include: service.yml
+- include: conf.yml
