@@ -17,6 +17,7 @@ Just use :
  vagrant up
 ```
 It creates two machines - gitlab and runner;
+
 Will install:
 - ntp on both hosts;
 - Gitlab and Git on gitlab host;
