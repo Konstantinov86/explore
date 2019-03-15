@@ -38,4 +38,3 @@ After that :
 - Runner will be registered;
 - default project will be created with test .gitlab-ci.yml;
 - Runner automatically start to deploy all tasks with tag "deploy"
-Runner will be registered and default project will be created with test .gitlab-ci.yml and automatically start to deploy it.
