@@ -25,7 +25,7 @@ Will install:
 
 When install will be completed :
 - please go to https://gitlab:4567 and change password on : "5iveL!fe";
-- Grab the shared-Runner token on the admin/runners page and paste it in:
+- grab the shared-Runner token on the admin/runners page and paste it in:
 /vagrant/provisioning/roles/runner/defaults/main.yml
 ```
 gitlab_runner_registration_token: ''
